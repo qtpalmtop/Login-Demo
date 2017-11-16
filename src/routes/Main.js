@@ -10,11 +10,20 @@ import './main.css';
 
 class Sider extends React.Component {
     state = {
-      imgs: ['http://118.89.199.87:3000/img/F8.jpg',
-        'http://118.89.199.87:3000/img/LJL.jpg',
-        'http://118.89.199.87:3000/img/JY.jpg',
-        'http://118.89.199.87:3000/img/ys.jpg'
-      ]
+      films: [{
+        name: '速度与激情8',
+        smallImg: 'http://118.89.199.87:3000/img/F8.jpg'
+      }, {
+        name: '蓝精灵:寻找神秘村',
+        smallImg: 'http://118.89.199.87:3000/img/LJL.jpg'
+      }, {
+        name: '记忆大师',
+        smallImg: 'http://118.89.199.87:3000/img/JY.jpg'
+      }, {
+        name: '亚瑟王:群雄真霸',
+        smallImg: 'http://118.89.199.87:3000/img/ys.jpg'
+      }]
+
     }
     render() {
         return (
@@ -28,20 +37,20 @@ class Sider extends React.Component {
                       <div>
                           <ul>
                             <li style={styles.image}>
-                                <a href=''> <img src={this.state.imgs[0]} style={styles.image.img}></img> </a>
-                                <p>速度与激情8</p>
+                                <a href=''> <img src={this.state.films[0].smallImg} style={styles.image.img}></img> </a>
+                                <p>{this.state.films[0].name}</p>
                             </li>
                             <li style={styles.image}>
-                                <a href=''> <img src={this.state.imgs[1]} style={styles.image.img}></img> </a>
-                                <p>蓝精灵:寻找神秘村</p>
+                                <a href=''> <img src={this.state.films[1].smallImg} style={styles.image.img}></img> </a>
+                                <p>{this.state.films[1].name}</p>
                             </li>
                             <li style={styles.image}>
-                                <a href=''> <img src={this.state.imgs[2]} style={styles.image.img}></img> </a>
-                                <p>记忆大师</p>
+                                <a href=''> <img src={this.state.films[2].smallImg} style={styles.image.img}></img> </a>
+                                <p>{this.state.films[2].name}</p>
                             </li>
                             <li style={styles.image}>
-                                <a href=''> <img src={this.state.imgs[3]} style={styles.image.img}></img> </a>
-                                <p>亚瑟王:群雄真霸</p>
+                                <a href=''> <img src={this.state.films[3].smallImg} style={styles.image.img}></img> </a>
+                                <p>{this.state.films[3].name}</p>
                             </li>
                           </ul>              
                             
