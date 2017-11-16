@@ -26,7 +26,6 @@ const Login = ({
     loginBoxLoading
   } = app
 
-  var uri = 'https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png'
 
   function handleOk() {
     validateFieldsAndScroll((err, value) => {
@@ -42,7 +41,7 @@ const Login = ({
 
   return (
     <div style={styles.login}>
-      <div style={{width: '320px',height: '320px',display:loginBoxLoading,boxShadow: '0 0 100px rgba(0,0,0,.08)'}}>
+      <div style={{width: '320px',height: '320px',marginTop:'150px',display:loginBoxLoading,boxShadow: '0 0 100px rgba(0,0,0,.08)'}}>
         <div style={styles.loginHead}>
           <span style={styles.loginText}>登录首页</span>
         </div>
